@@ -40,15 +40,16 @@
         <div class="flex-1">
             <!-- Top Navigation -->
             <header class="bg-white shadow-sm">
-                <div class="flex items-center justify-between p-4">
-                    <button class="md:hidden">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                <div class="h-16 flex items-center justify-between px-4">
+                    <button class="md:hidden text-gray-600" onclick="document.getElementById('sidebar').classList.toggle('-translate-x-full')">
+                        <i class="fas fa-bars text-xl"></i>
                     </button>
                     <div class="flex items-center space-x-4">
-                        <span class="text-gray-700">John Doe</span>
-                        <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/32" alt="Profile">
+
+                        <div class="flex items-center space-x-2">
+                            <img src="https://via.placeholder.com/40" alt="Profile" class="w-10 h-10 rounded-full">
+                            <span class="text-gray-700 font-medium">John Doe</span>
+                        </div>
                     </div>
                 </div>
             </header>
